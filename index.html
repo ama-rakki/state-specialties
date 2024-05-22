@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" type="text/css" media="screen">
+
     <title>State Specialties</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="jquery-jvectormap-2.0.5.css" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script src="jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="https://jvectormap.com/js/jquery-jvectormap-us-mill.js"></script>
+
+
 </head>
+
 <body>
-    
+    <div class="wrapper">
+    <div class="card" id="map" style="max-width: 1000px; height: 500px;"></div>
+    <script>
+        $(function () {
+            $('#map').vectorMap({ 
+                map: 'us_mill',
+                color: '#4A7E2A',
+                hoverColor:'#4A7E2A',
+                backgroundColor: 'transparent',
+                regionsSelectable: true,
+                onRegionClick: function(event, code){
+                    if(code === 'US-AL'){
+                        window.location = 'states/alabama.html'
+                    }
+                }
+            
+            
+            
+            });
+        });
+    </script>
+    </div>
 </body>
+
 </html>
