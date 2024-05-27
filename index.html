@@ -13,31 +13,190 @@
     <script src="jquery-jvectormap-2.0.5.min.js"></script>
     <script src="https://jvectormap.com/js/jquery-jvectormap-us-mill.js"></script>
 
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
     <div class="wrapper">
-    <div class="card" id="map" style="max-width: 1000px; height: 500px;"></div>
-    <script>
-        $(function () {
-            $('#map').vectorMap({ 
-                map: 'us_mill',
-                color: '#4A7E2A',
-                hoverColor:'#4A7E2A',
-                backgroundColor: 'transparent',
-                regionsSelectable: true,
-                onRegionClick: function(event, code){
-                    if(code === 'US-AL'){
-                        window.location = 'states/alabama.html'
+        <div class="card">
+            <h1>State Specialties</h1>
+
+        </div>
+        <div class="card" id="map" style="max-width: 1000px; height: 500px;"></div>
+
+        <script>
+            $(function () {
+                $('#map').vectorMap({
+
+                    map: 'us_mill',
+                    color: '#4A7E2A',
+                    hoverColor: '#4A7E2A',
+                    backgroundColor: 'transparent',
+                    regionsSelectable: true,
+                    onRegionClick: function (event, code) {
+                        if (code === 'US-AL') {
+                            window.location = 'states/alabama.html'
+                        }
+                        if (code === "US-VA") {
+                            window.location = 'states/virginia.html'
+                        }
+                        if (code === "US-PA") {
+                            window.location = 'states/pennsylvania.html'
+                        }
+                        if (code === "US-TN") {
+                            window.location = 'states/tennessee.html'
+                        }
+                        if (code === "US-WV") {
+                            window.location = 'states/west-virginia.html'
+                        }
+                        if (code === "US-NV") {
+                            window.location = 'states/nevada.html'
+                        }
+                        if (code === "US-TX") {
+                            window.location = 'states/texas.html'
+                        }
+                        if (code === "US-NH") {
+                            window.location = 'states/new-hamp.html'
+                        }
+                        if (code === "US-NY") {
+                            window.location = 'states/new-york.html'
+                        }
+                        if (code === "US-HI") {
+                            window.location = 'states/hawaii.html'
+                        }
+                        if (code === "US-VT") {
+                            window.location = 'states/vermont.html'
+                        }
+                        if (code === "US-NM") {
+                            window.location = 'states/new-mexico.html'
+                        }
+                        if (code === "US-NC") {
+                            window.location = 'states/north-carolina.html'
+                        }
+                        if (code === "US-ND") {
+                            window.location = 'states/north-dakota.html'
+                        }
+                        if (code === "US-NE") {
+                            window.location = 'states/nebraska.html'
+                        }
+                        if (code === "US-LA") {
+                            window.location = 'states/louisiana.html'
+                        }
+                        if (code === "US-SD") {
+                            window.location = 'states/south-dakota.html'
+                        }
+                        if (code === "US-DC") {
+                            window.location = 'states/dc.html'
+                        }
+                        if (code === "US-DE") {
+                            window.location = 'states/delaware.html'
+                        }
+                        if (code === "US-FL") {
+                            window.location = 'states/florida.html'
+                        }
+                        if (code === "US-CT") {
+                            window.location = 'states/conn.html'
+                        }
+                        if (code === "US-WA") {
+                            window.location = 'states/washington.html'
+                        }
+                        if (code === "US-KS") {
+                            window.location = 'states/kansas.html'
+                        }
+                        if (code === "US-WI") {
+                            window.location = 'states/wisconsin.html'
+                        }
+                        if (code === "US-OR") {
+                            window.location = 'states/oregon.html'
+                        }
+                        if (code === "US-KY") {
+                            window.location = 'states/kentucky.html'
+                        }
+                        if (code === "US-ME") {
+                            window.location = 'states/maine.html'
+                        }
+                        if (code === "US-OH") {
+                            window.location = 'states/ohio.html'
+                        }
+                        if (code === "US-OK") {
+                            window.location = 'states/oklahoma.html'
+                        }
+                        if (code === "US-ID") {
+                            window.location = 'states/idaho.html'
+                        }
+                        if (code === "US-WY") {
+                            window.location = 'states/wyoming.html'
+                        }
+                        if (code === "US-UT") {
+                            window.location = 'states/utah.html'
+                        }
+                        if (code === "US-IN") {
+                            window.location = 'states/indiana.html'
+                        }
+                        if (code === "US-IL") {
+                            window.location = 'states/illinois.html'
+                        }
+                        if (code === "US-AK") {
+                            window.location = 'states/alaska.html'
+                        }
+                        if (code === "US-NJ") {
+                            window.location = 'states/new-jersey.html'
+                        }
+                        if (code === "US-CO") {
+                            window.location = 'states/colorado.html'
+                        }
+                        if (code === "US-MD") {
+                            window.location = 'states/maryland.html'
+                        }
+                        if (code === "US-MA") {
+                            window.location = 'states/mass.html'
+                        }
+                        if (code === "US-MO") {
+                            window.location = 'states/missouri.html'
+                        }
+                        if (code === "US-MN") {
+                            window.location = 'states/minnesota.html'
+                        }
+                        if (code === "US-CA") {
+                            window.location = 'states/california.html'
+                        }
+                        if (code === "US-IA") {
+                            window.location = 'states/iowa.html'
+                        }
+                        if (code === "US-MI") {
+                            window.location = 'states/michigan.html'
+                        }
+                        if (code === "US-GA") {
+                            window.location = 'states/georgia.html'
+                        }
+                        if (code === "US-AZ") {
+                            window.location = 'states/arizona.html'
+                        }
+                        if (code === "US-MT") {
+                            window.location = 'states/montana.html'
+                        }
+                        if (code === "US-MS") {
+                            window.location = 'states/mississippi.html'
+                        }
+                        if (code === "US-SC") {
+                            window.location = 'states/south-carolina.html'
+                        }
+                        if (code === "US-RI") {
+                            window.location = 'states/rhode-island.html'
+                        }
+                        if (code === "US-AR") {
+                            window.location = 'states/arkansas.html'
+                        }
                     }
-                }
-            
-            
-            
+
+
+
+                });
             });
-        });
-    </script>
+        </script>
     </div>
 </body>
 
